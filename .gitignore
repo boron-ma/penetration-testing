@@ -1,0 +1,29 @@
+# 敏感信息
+*.log
+.env
+*.pem
+*.key
+*.password
+
+# 操作系统临时文件
+.DS_Store
+Thumbs.db
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.env/
+
+# 编辑器
+.vscode/
+.idea/
+
+# Typora 图片源文件（如果用图床）
+assets/images/*.png
+assets/images/*.jpg
+
+# 靶场/工具本地配置
+node_modules/
+*.bak
+*.swp
