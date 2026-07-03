@@ -5,10 +5,10 @@
 # Site
 title: Penetration-Testing
 subtitle: 'A penetration testing learning, vulnerability reproduction, as well as tool development and SRC.'
-description: 'byron'
+description: ''
 keywords:
-author: John Doe
-language: zh-CN
+author: Byron
+language: en
 timezone: 'Asia/Shanghai'
 
 # URL
@@ -96,7 +96,7 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: next
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
