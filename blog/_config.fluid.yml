@@ -47,12 +47,13 @@ navbar:
     - { key: "category", link: "/categories/", icon: "iconfont icon-category-fill" }
     - { key: "tags", link: "/tags/", icon: "iconfont icon-tags-fill" }
     - { key: "about", link: "/about/", icon: "iconfont icon-user-fill" }
+    - { key: "github", link: "https://github.com/byroins/penetration-testing", icon: "iconfont icon-github-fill" }
 
 # ---------------------------
 # 三、 首页配置
 # ---------------------------
 index:
-  banner_img: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5"
+  banner_img: ""
   text: "Stay Hungry, Stay Foolish."
   slogan:
     enable: true
@@ -73,23 +74,23 @@ index:
 # 四、 独立页面 Banner 配置（解决 Fluid 层级差异）
 # ---------------------------
 archive:
-  banner_img: "https://images.unsplash.com/photo-1614064641938-3bbee52942c7"
+  banner_img: ""
 category:
-  banner_img: "https://images.unsplash.com/photo-1614064641938-3bbee52942c7"
+  banner_img: ""
 tag:
-  banner_img: "https://images.unsplash.com/photo-1614064641938-3bbee52942c7"
+  banner_img: ""
   # 标签云配置修正（对齐 NexT tagcloud）
   tagcloud:
     min_img_size: 14
     max_img_size: 26
 about:
-  banner_img: "https://images.unsplash.com/photo-1614064641938-3bbee52942c7"
+  banner_img: ""
 
 # ---------------------------
 # 五、 文章页核心配置
 # ---------------------------
 post:
-  banner_img: "https://images.unsplash.com/photo-1614064641938-3bbee52942c7"
+  banner_img: ""
   
   # 文章元信息（修正不蒜子阅读量层级）
   meta:
@@ -148,11 +149,11 @@ code:
 # 七、 页脚配置
 # ---------------------------
 footer:
-  content: '© 2026 Byron. All Rights Reserved.'
+  content: '© 2026 Byron'
   statistics:
     enable: true      # 开启全站访问统计
-    pv_format: "总访问量 {} 次"
-    uv_format: "总访客数 {} 人次"
+    pv_format: "Total Views: {}"
+    uv_format: "Total Visitors: {}"
 
 # ---------------------------
 # 八、 本地搜索引擎与优化
