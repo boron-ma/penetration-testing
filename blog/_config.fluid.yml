@@ -5,39 +5,38 @@
 # ---------------------------
 # 一、 全局主题基础外观与色彩
 # ---------------------------
-theme:
-  # 日夜间模式
-  dark_mode:
-    enable: true        # 开启日夜间手动切换
-    default: light      # 默认日间模式
-  
-  # 页面入场动画
-  web_animations:
-    enable: true        # 开启页面入场动画
-  
-  # 回到顶部按钮（对齐 NexT back2top）
-  scroll_top_btn:
-    enable: true
-    arrow_up_icon: "iconfont icon-arrowup" # 向上箭头
-  
-  # 颜色全局配置（对齐 NexT 标志性的墨绿色）
-  color:
-    # 日间模式核心配色
-    light:
-      text_color: "#3c4858"
-      background_color: "#f8f9fa"
-      link_color: "#37c6c0"        # 链接颜色，对齐你的 NexT 配色
-      link_hover_color: "#2bb0aa"
-      navbar_bg_color: "#2f4154"
-    # 夜间模式核心配色
-    dark:
-      text_color: "#c4c6c9"
-      background_color: "#1d1e22"
-      link_color: "#37c6c0"
-      link_hover_color: "#2bb0aa"
+# 日夜间模式
+dark_mode:
+  enable: true        # 开启日夜间手动切换
+  default: light      # 默认日间模式
+
+# 页面入场动画
+web_animations:
+  enable: true        # 开启页面入场动画
+
+# 回到顶部按钮
+scroll_top_btn:
+  enable: true
+  arrow_up_icon: "iconfont icon-arrowup"
+
+# 颜色全局配置
+color:
+  # 日间模式核心配色
+  light:
+    text_color: "#3c4858"
+    background_color: "#f8f9fa"
+    link_color: "#37c6c0"
+    link_hover_color: "#2bb0aa"
+    navbar_bg_color: "#2f4154"
+  # 夜间模式核心配色
+  dark:
+    text_color: "#c4c6c9"
+    background_color: "#1d1e22"
+    link_color: "#37c6c0"
+    link_hover_color: "#2bb0aa"
 
 # ---------------------------
-# 二、 导航栏配置（对齐 NexT menu）
+# 二、 导航栏配置
 # ---------------------------
 navbar:
   blog_title: "Byron's Security Lab"
@@ -58,20 +57,26 @@ index:
   slogan:
     enable: true
     text: "Web Penetration Testing / Vulnerability Reproduction / Source Code Auditing / SRC / Focused on Hands-on Security Research"
-  
-  # 文章摘要（对齐 NexT excerpt_description）
+    # 打字机效果（正确键名：typed）
+    typed:
+      enable: true
+      typeSpeed: 40    # 打字速度，单位毫秒/字，数值越小越快
+      startDelay: 0    # 零延迟开始，解决文字出来慢
+      loop: false      # 关闭循环打字
+
+  # 文章摘要
   excerpt:
     enable: true
-    max_lines: 5         # 按行数或字数截取
-  post_url_target: _self # 首页点击文章在当前页打开
-  
+    max_lines: 5
+  post_url_target: _self
+
   # 查看全文按钮
   read_more_btn:
     enable: true
     text: "阅读全文"
 
 # ---------------------------
-# 四、 独立页面 Banner 配置（解决 Fluid 层级差异）
+# 四、 独立页面 Banner 配置
 # ---------------------------
 archive:
   banner_img: ""
@@ -79,7 +84,6 @@ category:
   banner_img: ""
 tag:
   banner_img: ""
-  # 标签云配置修正（对齐 NexT tagcloud）
   tagcloud:
     min_img_size: 14
     max_img_size: 26
@@ -91,8 +95,8 @@ about:
 # ---------------------------
 post:
   banner_img: ""
-  
-  # 文章元信息（修正不蒜子阅读量层级）
+
+  # 文章元信息
   meta:
     author:
       enable: true
@@ -106,20 +110,20 @@ post:
     category:
       enable: true
     wordcount:
-      enable: true    # 依赖 hexo-wordcount 插件
+      enable: true
     min2read:
       enable: true
       awl: 2
       wpm: 300
     views:
-      enable: true    # 激活文章阅读量统计（内置不蒜子）
+      enable: true
 
-  # 文章目录（对齐 NexT Gemini 悬浮侧边栏体验）
+  # 文章目录
   toc:
     enable: true
     heading_selector: "h1,h2,h3,h4,h5,h6"
-    collapse_depth: 3 # 默认折叠深度，超过 3 级默认折叠，保持干净
-    number: true      # 显示目录编号
+    collapse_depth: 3
+    number: true
 
   # 上一篇/下一篇导航
   prev_next:
@@ -130,20 +134,20 @@ post:
     enable: true
     anchor: top
     height: 3px
-    color: "#37c6c0" # 完美复刻你的经典青色进度条
+    color: "#37c6c0"
 
 # ---------------------------
-# 六、 全局代码块增强（修正 Fluid 专属键名）
+# 六、 全局代码块增强
 # ---------------------------
 code:
-  copy_btn: true      # 开启一键复制
+  copy_btn: true
   highlight:
-    lib: "highlightjs" # 使用主流的 highlightjs 引擎
-    style: "Mac"       # Mac 风格三色圆点控制台外壳
-    bg_color: true     # 启用自定义背景色
+    lib: "highlightjs"
+    style: "Mac"
+    bg_color: true
   fold:
-    enable: true      # 开启长代码折叠
-    height: 400       # 超过 400 像素自动折叠
+    enable: true
+    height: 400
 
 # ---------------------------
 # 七、 页脚配置
@@ -151,7 +155,7 @@ code:
 footer:
   content: '© 2026 Byron'
   statistics:
-    enable: true      # 开启全站访问统计
+    enable: true
     pv_format: "Total Views: {}"
     uv_format: "Total Visitors: {}"
 
@@ -165,11 +169,14 @@ search:
   content: true
 
 # ---------------------------
-# 九、 性能与图片加载优化
+# 九、 性能与资源优化
 # ---------------------------
 lazyload:
-  enable: true        # 开启图片懒加载（修正键名位置）
+  enable: true
 
-# 图片点击放大功能（完美替代 NexT fancybox）
+# 自定义资源引入（顶级配置，不要缩进）
+custom_css:
+  - /css/custom.css
+
 custom_js:
-  - src: https://cdn.jsdelivr.net/npm/medium-zoom@1.0.6/dist/medium-zoom.min.js
+  - src: https://cdn.bootcdn.net/ajax/libs/medium-zoom/1.0.6/medium-zoom.min.js
