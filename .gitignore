@@ -27,3 +27,4 @@ assets/images/*.jpg
 node_modules/
 *.bak
 *.swp
+docs/
